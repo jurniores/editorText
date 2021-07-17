@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="pequena.css">
+    <link rel="stylesheet" href="grande.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Editor Rich</title>
+</head>
+<style>
+
+</style>
+<body>
+
+    <div id="padrao">
+        <div id="navbar">
+            <ul id="ul1">
+                <li class="icon-bold lizinho" onclick="bold(1)" title="Negrito"></li>|
+                <li class="icon-italic lizinho" onclick="bold(2)" title="Itálico"></li>|
+                <li class="icon-underline lizinho" onclick="bold(3)" title="Underline"></li>|
+                <li class="icon-strikethrough lizinho" onclick="bold(7)" title="Strike"></li>|
+                <li class="icon-text-width lizinho" onclick="bold(4)" title="Titulo"></li>|
+                <li class="icon-text lizinho" onclick="bold(9)" title="Parágrafo" style="font-weight: bold; font-size:12pt; font-style: italic;">P</li>|
+                <li class="icon-list-ul lizinho" onclick="bold(5)" title="Lista"></li>|
+                <li class="lizinho" style="list-style: none; font-weight: bold; font-size:12pt; font-style: italic;" onclick="bold(8)" title="Adicone a tag li, somente detro da tag UL ou OL">Li</li>|
+                <li class="icon-link lizinho" onclick="bold(6)" title="Link"></li>|
+                <li class="lizinho" onclick="bold(10)" title="quebra linha" style="list-style: none; font-weight: bold; font-size:12pt; font-style: italic;">Qb. LINHA</li>|
+                <li class="icon-undo lizinho" onclick="volta()" title="Corrige erro"></li>|
+                
+                <label class="icon-font labelMostra" for="check" title="Configurações"></label><input id="check" class="check" type="checkbox">
+                <div id="mostraDiv">
+                    <span id="spanX" onclick="retira()">X</span>
+                    <label>Tamanho:</label><input type="number" value="14" class="input1 valores">
+                    
+                    <label>Fonte:</label> <select id="Select" class="input1 valores">
+                        <option value="">Selecione</option>
+                        <option value="Arial, Helvetica, sans-serif">Arial</option>
+                        <option value="Verdana">Verdana</option>
+                        <option value="fantasy">Fantasy</option>
+                        <option value="cursive">Cursive</option>
+                        <option value="Georgia">Georgia</option>
+                        
+                    </select>
+                    <label>Cor:</label><input class="input1 valores inputCor" id="cor" type="color"><br>
+                    <input type="button" value="Aplicar" class="input1" onclick="aplicar()">
+                    
+                </div>
+            </ul>
+        <textarea id="texto"></textarea>
+    </div>
+       <div id="div1"></div>
+    </div>
+    <div id="fb-root"></div>
+   <script src="teste.js"></script>
+</body>
+</html>
